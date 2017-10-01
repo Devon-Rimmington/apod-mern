@@ -1,0 +1,109 @@
+<html>
+
+<head>
+
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="https://apis.google.com/js/api:client.js"></script>
+
+  <style>
+    .loader {
+      display: block;
+      width: '20%';
+      margin: 0 auto;
+      border: 16px solid #f3f3f3; /* Light grey */
+      border-top: 16px solid #3498db; /* Blue */
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .left {
+      float: left;
+    }
+
+    .right {
+      float: right;
+    }
+
+    @media screen and (max-width:499px) {
+      .table {
+        font-size: 10px;
+      }
+      .viewerLink {
+        display: block;
+      }
+      .viewerImage {
+        width:90%;
+        margin: 0 auto;
+      }
+      .hdViewerImage {
+        max-height: 300px;
+      }
+    }
+    @media screen and (min-width:500px) {
+      #signin-google.google-signin {
+        background-image: url('/images/btn_google_signin_dark_normal_web.png');
+        width: 191px;
+        height: 46px;
+      }
+      #signin-google.google-signin-clicked {
+        background-image: url('/images/btn_google_signin_dark_pressed_web.png');
+        width: 191px;
+        height: 46px;
+      }
+      #signin-google.google-signin-signedin {
+        background-image: url('/images/btn_google_signin_dark_disabled_web.png');
+        width: 191px;
+        height: 46px;
+      }
+      #signin-google:focus {
+        background-image: url('/images/btn_googlee_signin_dark_focus_web.png');
+        width: 191px;
+        height: 46px;
+      }
+      .table {
+        font-size: 16px;
+      }
+      .viewerLink {
+        display:inline-block;
+        position:relative;
+      }
+      .viewerImage {
+        width: 50%;
+        margin: 0 auto;
+      }
+      .hdViewerImage {
+        max-height: 720px;
+      }
+    }
+  </style>
+
+</head>
+
+
+<body>
+
+  <div id='app'>
+  </div>
+
+  <script src='/app.bundle.js'></script>
+
+</body>
+
+</html>
